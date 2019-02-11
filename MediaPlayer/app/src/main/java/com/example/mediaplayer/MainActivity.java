@@ -20,20 +20,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        title = (TextView) findViewById(R.id.textView);
+        title = (TextView) findViewById(R.id.title);
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-        play = (Button) findViewById(R.id.button);
-        pause = (Button) findViewById(R.id.button);
 
-        mp = (MediaPlayer) findViewById(R.id.California);
+        mp = MediaPlayer.create(this, R.id.California);
+
+        play = (Button) findViewById(R.id.play);
+        pause = (Button) findViewById(R.id.pause);
 
         play.setOnClickListener(this);
         pause.setOnClickListener(this);
 
     }
 
+    public void startPlay(View view){
+        mp.start();
+    }
 
-
+    public void stopPlay(View view){
+        mp.stop();
+    }
 
 
     play.setOnClickListener(new View.OnClickListener() {
