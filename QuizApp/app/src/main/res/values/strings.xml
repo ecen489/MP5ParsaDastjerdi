@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="title">Android Quiz App</string>
+    <string name="scoreboard">Scoreboard</string>
+    <string name="goback">Go Back</string>
+    <string name="reset">Reset</string>
+
+    <string name="prompt">Enter Answer Here.</string>
+    <string name="submit">Submit</string>
+
+
+    <string-array name="topics">
+        <item>ListView</item>
+        <item>RadioGroup</item>
+        <item>MediaPlayer</item>
+    </string-array>
+    <string name="title_activity_question">Question</string>
 </resources>
